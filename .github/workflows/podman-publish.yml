@@ -6,11 +6,6 @@ name: Podman
 # documentation.
 
 on:
-  schedule:
-    - cron: '21 23 * * *'
-  push:
-    # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
   workflow_dispatch:
 
 env:
@@ -43,7 +38,6 @@ jobs:
       # Login against a Docker registry except on PR
       # https://github.com/docker/login-action
       - name: Log into registry ${{ env.REGISTRY }}
-        if: github.event_name != 'pull_request'
         uses: redhat-actions/podman-login@v1
         with:
           registry: ${{ env.REGISTRY }}
