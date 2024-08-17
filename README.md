@@ -16,13 +16,13 @@ docker build wget -t test:local
 
 # Usage example
 ```zsh
-❯ docker run --rm 31099/wget:alpine-3.16 --version
+❯ docker run --rm 31099/wget:alpine-3.20 --version
 Start wget to fetch for 3600 seconds
 GNU Wget 1.21.3 built on linux-musl.
 ```
-Run docker image `wget` tag `alpine-3.16` from my docker hub account to print version information. The value of time limit of 3600 seconds is the image default that you can override via `--env SECS=10`
+Run docker image `wget` tag `alpine-3.20` from my docker hub account to print version information. The value of time limit of 3600 seconds is the image default that you can override via `--env SECS=10`
 ```zsh
-❯ docker run --env SECS=10 --rm 31099/wget:alpine-3.16 --version
+❯ docker run --env SECS=10 --rm 31099/wget:alpine-3.20 --version
 Start wget to fetch for 10 seconds
 GNU Wget 1.21.3 built on linux-musl.
 ```
