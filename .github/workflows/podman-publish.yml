@@ -7,8 +7,6 @@ name: Podman
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '21 23 * * *'
   push:
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
