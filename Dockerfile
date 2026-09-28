@@ -1,4 +1,4 @@
-FROM alpine:3.23.3
+FROM alpine:3.24.2
 
 ARG timeout=3600
 ENV SECS=${timeout}
